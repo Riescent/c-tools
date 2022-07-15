@@ -3,3 +3,5 @@ a.out
 *.cWithExt
 .DS_Store
 .vscode
+*.plist
+*.dSYM
