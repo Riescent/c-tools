@@ -3,8 +3,16 @@
 #include <sys/ioctl.h>	//struct winsize; ioctl(); TIOCGWINSZ
 #include <unistd.h>		//STDOUT_FILENO
 
+
+
 //TODO enable support for formating (%i, %s...)
 //TODO enable support for multiple lines
+/*
+#include <stdio.h>		printf()
+#include <string.h>		strlen()
+#include <sys/ioctl.h>	struct winsize; ioctl(); TIOCGWINSZ
+#include <unistd.h>		STDOUT_FILENO
+*/
 void print_center(char text[]) {
 	struct winsize window_size;
 	ioctl(STDOUT_FILENO, TIOCGWINSZ, &window_size); // Assigns the size of the terminal to window_size
