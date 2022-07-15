@@ -11,6 +11,7 @@
 #include <unistd.h>		STDOUT_FILENO
 __TO_DO__ enable support for multiple lines
 */
+// Prints a string in the middle of a terminal line
 void print_center(const char *str)
 {
 	//= move cursor to center
@@ -34,6 +35,7 @@ __TO_DO__ find a way to count args to avoid segfault when more args then implied
 __TO_DO__ enable support for multiple lines
 __!WARNING!__ Causes segfault when called with more arguments then implied by format
 */
+// Prints a formated string in the middle of a terminal line
 void printf_center(const char *format, ...)
 {
 	//= format string
@@ -50,7 +52,7 @@ void printf_center(const char *format, ...)
 	ioctl(STDOUT_FILENO, TIOCGWINSZ, &window_size); // Assigns the size of the terminal to window_size
 
 	/* window_size.ws_col / 2 - strlen(print_me) / 2 needs to be stored in a variable
-	   or the following loop bugs when string longer then the terminal can write in one line */
+	   or the following loop bugs when string longer than the terminal can write in one line */
 	int spaces_to_write = window_size.ws_col / 2 - strlen(print_me) / 2;
 	for (int i = 0; i < spaces_to_write; i++)
 		printf(" ");
@@ -60,6 +62,8 @@ void printf_center(const char *format, ...)
 }
 
 //#include <stdio.h>
+/* Prints argument and returns user input (scanf) after verifiyng it is an int
+   (if it isn't an int the user will be asked to retry infinitely) */
 int get_int(const char *print)
 {
 	printf("%s", print);
@@ -77,11 +81,4 @@ int get_int(const char *print)
 		return_integer = get_int(print); // Restarts the fonction
 	}
 	return (return_integer);
-}
-
-int main(void)
-{
-	print_center("centered text\n");
-	int i = get_int("enter i: ");
-	printf_center("i = %i\n", i);
 }
