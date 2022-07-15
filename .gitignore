@@ -1,6 +1,6 @@
 
 a.out
-*.cWithExt
+*.?WithExt
 .DS_Store
 .vscode
 *.plist

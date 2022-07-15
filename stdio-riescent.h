@@ -82,3 +82,35 @@ int get_int(const char *print)
 	}
 	return (return_integer);
 }
+
+/*
+#include <stdio.h>
+#include <stdio-riescent.h>
+*/
+/* Prints argument at line center and returns user input (scanf) after verifiyng it
+   is an int (if it isn't an int the user will be asked to retry infinitely) */
+int get_int_center(const char *print)
+{
+	print_center(print);
+
+	int return_integer;
+	if (!scanf("%i", &return_integer))
+	{
+		print_center("An error occured, make sure you input an integer.\n");
+
+		//= This discards the input from scanf to avoid entering an infinite loop
+		while (return_integer != '\n' && return_integer != EOF)
+			return_integer = getchar();
+		//!
+
+		return_integer = get_int_center(print); // Restarts the fonction
+	}
+	return (return_integer);
+}
+
+//#include <stdio.h>
+// Prints a new line
+void new_line(void)
+{
+	printf("\n");
+}
