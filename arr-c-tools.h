@@ -1,6 +1,7 @@
+#include "random-c-tools.h"
+
 #include <stdbool.h>
 #include <stdio.h>
-#include "random-riescent.h"
 
 // Used to get the size of an array
 #define arrsize(arr) sizeof(arr) / sizeof(arr[0])
