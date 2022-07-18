@@ -10,5 +10,5 @@ int random_range(int min, int max)
 {
 	// The following needs to be included in main()
 	// srand(time_ms()); // Seeds rand() with time_ms() (changes by 1 every ms)
-	return (rand() % (max + 1 - min) + min);
+	return ((rand() % (max + 1 - min)) + min);
 }
