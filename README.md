@@ -48,7 +48,7 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
       - At the top of your project's .c file, add:  
             #include "c-tools.h"
 
-  - #### Add to all projects (Using [VS Code](https://code.visualstudio.com/) and the [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extension)
+  - #### Add to all projects (Using [VS Code](https://code.visualstudio.com/), the [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) extension, and gcc compiler)
       - Create a folder anywhere on your computer. (We will refer to the path of this folder as ___/PATH/___)  
       - [Download](https://github.com/Riescent/c-tools/archive/refs/heads/main.zip)  
       - Open the downloaded file.  
