@@ -44,7 +44,7 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
   - #### Add to one project
       - [Download](https://github.com/Riescent/c-tools/archive/refs/heads/main.zip)  
       - Open the downloaded file.  
-      - Copy the "c-tools_headers" folder and c-tools.h in your project's folder.  
+      - Copy the "c-tools_headers" folder and "c-tools.h" to your project's folder.  
       - At the top of your project's .c file, add:  
             #include "c-tools.h"
 
@@ -52,7 +52,7 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
       - Create a folder anywhere on your computer. (We will refer to the path of this folder as ___/PATH/___)  
       - [Download](https://github.com/Riescent/c-tools/archive/refs/heads/main.zip)  
       - Open the downloaded file.  
-      - Copy the "c-tools_headers" folder and c-tools.h to PATH.  
+      - Copy the "c-tools_headers" folder and "c-tools.h" to ___/PATH/___.  
       - In VS code: press F1, type "open settings", select ">Preferences: Open Settings (JSON)"  
       - At the end of the file, add:  
             "C_Cpp.default.includePath": ["___/PATH/___"]  
