@@ -25,7 +25,7 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
 
 ## random-c-tools.h
 
-  - #### int random_range(int min, int max)
+  - #### int random_range(const int min, const int max)
             Returns random value >= min and <= max. Add "srand(time_ms());" to main() for better results
             
 
