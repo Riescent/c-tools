@@ -63,6 +63,12 @@ int bi_search_arr_int(const int target, const int *arr, const int arr_size)
 // Prints all members of an int arr
 void print_arr_int(const int *arr, const int arr_size)
 {
+	printf("[");
 	for (int i = 0; i < arr_size; i++)
-		printf("%i\n", arr[i]);
+	{
+		printf("%i", arr[i]);
+		if (i != arr_size - 1)
+			printf(", ");
+	}
+	printf("]\n");
 }
