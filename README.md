@@ -60,7 +60,7 @@ The use of individual .h files is not recommended, please use c-tools.h.<br>
       - Search for "code-runner.executorMap"  
       - Under "code-runner.executorMap" search for "c"  
       - Replace the line where you found "c" with:  
-            "c": "cd $dir && gcc -I ___/PATH/___ $fileName -o $fileNameWithExt && $dir$fileNameWithExt",  
+            "c": "cd $dir && gcc -I ___/PATH/___ $fileName -o $fileNameWithExt && $dir$fileNameWithExt && rm $dir$fileNameWithExt",  
       - At the top of your project's .c file, add:  
             #include "c-tools.h"  
       - Run your code using [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)  
