@@ -60,6 +60,6 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
       - Under "code-runner.executorMap" search for "c"  
       - Replace the line where you found "c" with:  
             "c": "cd $dir && gcc -I ___/PATH/___ $fileName -o $fileNameWithExt && $dir$fileNameWithExt",  
-      - Run your code using [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)  
       - At the top of your project's .c file, add:  
-            #include "c-tools.h"
+            #include "c-tools.h"  
+      - Run your code using [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)  
