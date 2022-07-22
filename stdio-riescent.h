@@ -114,3 +114,11 @@ void new_line(void)
 {
 	printf("\n");
 }
+
+// TODO add to README
+//#include <stdio.h>
+// Clears the terminal
+void clear_terminal(void)
+{
+	printf("\e[1;1H\e[2J");
+}
