@@ -15,6 +15,8 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
             Prints argument at line center and returns user input (scanf) after verifiyng it is an int (if it isn't an int the user will be asked to retry infinitely)
   - #### void new_line(void)
             Prints a new line
+  - #### void clear_terminal(void)
+            Clears the terminal
             
 
 ## time-c-tools.h
@@ -39,6 +41,8 @@ How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-
             Sorts an int array from lower to bigger
   - #### int bi_search_arr_int(const int target, const int *arr, const int arr_size)
             Does a binary search for 'target' in an int array
+  - #### void print_arr_int(const int *arr, const int arr_size)
+            Prints all members of an int arr
   
 ## How to use c-tools
   - #### Add to one project
