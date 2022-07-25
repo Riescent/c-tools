@@ -1,3 +1,5 @@
+#pragma once
+
 #include "random-c-tools.h"
 
 #include <stdbool.h>

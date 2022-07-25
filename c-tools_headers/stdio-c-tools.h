@@ -1,3 +1,5 @@
+#pragma once
+
 #include <stdio.h>	   //print_center() - printf_center()
 #include <string.h>	   //print_center() - printf_center()
 #include <sys/ioctl.h> //print_center() - printf_center()
