@@ -2,7 +2,6 @@
 
 ## Headers to make c easy
 How to use c-tools -> [click me](https://github.com/Riescent/c-tools#how-to-use-c-tools)  
-The use of individual .h files is not recommended, please use c-tools.h.<br>  
 
 ## stdio-c-tools.h
 
